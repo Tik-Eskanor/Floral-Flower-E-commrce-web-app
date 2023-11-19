@@ -1,0 +1,598 @@
+*
+{
+    text-decoration: none !important;
+    outline: none !important;
+    /* border: 1px solid; */
+}
+body
+{
+    background: whitesmoke;
+}
+@font-face 
+{
+    font-family:floral;
+    src: url(../fonts/Cartesian-4B576.ttf);
+}
+@font-face {
+    font-family: roboto-medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+html
+{
+    font-size: 85%;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: roboto-medium !important;
+}
+
+:root
+{
+    --main-background:#333;
+    --text-color:#333;
+    --dark-burly:rgb(218, 173, 115);
+    --light-burly:burlywood;
+    
+}
+.m-bg
+{
+    background: var(--main-background);
+}
+.btn-reg
+{
+    padding: 1rem 2rem;
+    border: 3px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    font-family: roboto-medium;
+}
+
+.btn-reg:hover
+{
+    background: var(--main-background);
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+/* navigation-------- */
+.top-nav
+{
+    font-family: roboto-regular;
+}
+.user
+{
+    border: 1px solid rgba(51, 51, 51, 0.678);
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(51, 51, 51, 0.295);
+}
+.user a
+{
+    color: #333;
+    transition: all 0.5s ease-in-out;
+}
+
+.user a:hover
+{
+    color:rgb(199, 150, 86);
+}
+
+.user .my-account
+{
+    background: #333;
+    color:white;
+}
+.search-bar
+{
+    flex:1;
+}
+
+.search-bar form
+{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    column-gap: 0.5rem;
+}
+
+.search-bar form input
+{
+    width:100%;
+    padding:0.5rem;
+    border: 1px solid rgba(51, 51, 51, 0.664);
+    border-radius: 5px;
+}
+
+.search-bar form button
+{
+    display: inline-block;
+    border: none;
+    background: #333;
+    color:white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.nav-item
+{
+    border: 2px solid transparent !important;
+    transition: all 0.5s !important;
+}
+.nav-item:hover 
+{
+    background: burlywood !important;
+    border-radius: 5px;
+    border: 2px solid rgba(51, 51, 51, 0.459) !important;
+}
+
+.nav-link 
+{
+    font-family: roboto-regular !important;
+    color:whitesmoke !important;
+}
+
+/* ----------------------- */
+
+/* hero------------------ */
+.hero .left
+{
+  background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url(../images/intro-bg.jpg);
+  padding: 8rem 0;
+  border-radius: 0 0 150px 0;
+}
+.hero h1
+{
+  font-family: floral!important;
+  font-size: 9rem;
+  color:whitesmoke;
+  line-height: 1;
+}
+.hero p
+{
+  color:whitesmoke;
+  max-width: 300px;
+  font-size: 1.1rem;
+}
+.hero-btn
+{
+    padding: 1rem 2rem;
+    border: 3px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    font-family: roboto-medium;
+}
+.hero-btn:hover
+{
+    background: whitesmoke;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+/* --------------------- */
+
+
+
+/* about----------------- */
+.about h1,h2
+{
+    line-height: 1;
+}
+.about h1 span
+{
+    font-size: 6rem;
+    font-family: floral;
+}
+.about p
+{
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about .right
+{
+    width: 90%;
+    margin:auto;
+}
+.about .right .layer-one
+{
+    box-shadow:0px 0px 15px rgba(94, 104, 121, 0.164);
+    border-radius: 15px;
+    transform: rotate(-4deg);
+    border: 1px solid rgba(51, 51, 51, 0.233);
+}
+.about .right .layer-two
+{
+    border-radius: 10px;
+    border: 1px solid rgba(51, 51, 51, 0.185);
+}
+.about .right .img-main img
+{
+    border-radius:10px;
+    padding: 0.2rem;
+    height: 100%;
+}
+.about .right .img-right img
+{
+    border-radius:5px;
+    border: 1px solid rgba(51, 51, 51, 0.233);
+    padding: 0.2rem;
+    margin: 0.3rem 0;
+}
+
+.why-us
+{
+    margin-top: 8rem;
+}
+
+.subtitle h3
+{
+    letter-spacing: 2px;
+    line-height: 0.8;
+}
+.subtitle h1
+{
+    font-size: 3rem;
+}
+
+.subtitle h1 span
+{
+    color:var(--dark-burly);
+    font-size: 3.5rem;
+}
+
+.products-subtitle
+{
+    position: relative;
+}
+.products-subtitle::after
+{
+    content: "";
+    position: absolute;
+    left: 2px;
+    bottom: 7px;
+    height: 6px;
+    width:70px;
+    border-radius: 20px;
+    background: var(--main-background);
+    display: block;
+}
+.products-subtitle h3
+{
+    letter-spacing: 2px;
+    line-height: 0.8;
+}
+.products-subtitle h1
+{
+    font-size: 3rem;
+}
+
+.why-us .content
+{
+    padding: 2rem 0;
+    box-shadow: 0px 0px 10px rgba(94, 104, 121, 0.158);
+    border: 1px solid rgba(51, 51, 51, 0.116);
+    text-align: center;
+    border-radius: 7px;
+    width:70%;
+    margin: auto;
+}
+.why-us .content.except
+{
+    background: var(--dark-burly);
+    color: whitesmoke;
+}
+
+.why-us .content i
+{
+    font-size: 3rem;
+}
+
+.why-us h4 span
+{
+    color:var(--dark-burly);
+    font-size: 1.5rem ;
+}
+/* ---------------------- */
+
+
+/* product section -------*/
+.product 
+{
+    margin-top: 8rem;
+}
+.product .content
+{
+  box-shadow: 0px 0px 20px rgba(51, 51, 51, 0.212);
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  transition:all 1.5s;
+  transform-style: preserve-3d;
+  min-height: 20px;
+}
+
+.product .content-container:hover .content
+{
+   transform:  rotateY(.5turn);
+}
+
+.product .content .back
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: o;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    min-height: 20px;
+}
+
+.product .content .back
+{
+    transform: rotateY(.5turn);
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.product .content .back h3
+{
+    color: white;
+    position: relative;
+}
+.product .content .back h3::after
+{
+    content: "";
+    position: absolute;
+    left: 2px;
+    bottom: -5px;
+    height: 3px;
+    width:40px;
+    border-radius: 20px;
+    background: white;
+    display: block;
+}
+
+.product .content .back p
+{
+    color: var(--light-burly);
+    margin-top: 1rem;
+    /* font-family: roboto-regular; */
+    line-height: 1.5;
+}
+.product .content .back p a
+{
+    color: var(--light-burly);
+    font-weight: 900;
+}
+.product .content .back .cart-btn
+{
+    border: 2px solid burlywood;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    color: burlywood;
+    display:block;
+    transition: all 0.5s;
+    font-weight: 900;
+    text-align-last: center;
+}
+.product .content .back .cart-btn.cart
+{
+    background: transparent;
+    width: 100%;
+}
+
+.product .content .back .cart-btn:hover
+{
+    color: white;
+    background-color: burlywood;
+}
+
+.product .content .img
+{
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px 10px 00;
+}
+.product .content .box
+{
+  border: 1px solid rgba(51, 51, 51, 0.151);
+  border-radius: 0 0 10px 10px;
+}
+.product .content .box .texts
+{
+  padding: 0.5rem;
+}
+.product .owl-carousel .naira
+{
+  width: 20px;
+}
+/* ---------------------- */
+/* cart----------------- */
+.cart .qty
+{
+    background:white;
+    border:none;
+}
+/* -------------------- */
+
+/* form---------------- */
+.form
+{
+    font-family: roboto-regular;
+
+}
+.form form
+{
+    border: 1px solid rgba(51, 51, 51, 0.322);
+    border-radius: 30px;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.171);
+}
+.form span
+{
+   text-decoration: underline;
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+   display: inline-block;
+   font-weight: 900;
+   margin-left: 0.5rem;
+}
+.form h1
+{
+    font-family: floral;
+    text-align:center;
+    font-size: 5rem;
+}
+.form h1 span
+{
+    font-size: 6rem;
+    color: var(--light-burly);
+}
+.form .input
+{
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    background: none;
+    border: 1px solid rgba(51, 51, 51, 0.322);
+    border-radius: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+.form .submit
+{
+    background:burlywood;
+    color: whitesmoke;
+    padding: 0.7rem 1.3rem;
+    border-radius: 7px;
+    border:none;
+    display: inline-block;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+.form .submit:hover
+{
+    background: #333;
+    color: whitesmoke;
+}
+.form a
+{
+    color: var(--text-color);
+    text-align:center;
+    font-size: 1.1rem;
+
+}
+/* ------------------- */
+
+/* cart--------------- */
+.check-out
+{  
+    display:flex;
+    justify-content: center;
+    display: block;
+    font-size: 2rem;
+
+}
+#total-price
+{
+    background:transparent;
+    font-weight: 900;
+    display: inline;
+    color: var(--dark-burly);
+    max-width: 100px;
+    border:none;
+}
+.checkout-btn
+{
+    padding: 0.3rem 3rem;
+    border: none;
+    background: var(--dark-burly);
+    color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+
+}
+/* ------------------- */
+
+
+
+
+
+
+/* Mobile view------- */
+@media (max-width:750px) 
+{
+    .nav-item
+    {
+        padding:0 0.5rem;
+        display: inline-block;
+    }
+    .cart-icon-wrapper
+    {
+        margin-top:1rem;
+    }
+}
+@media (max-width:500px) 
+{
+    .search-bar form
+    {
+        margin-right: auto;
+    }
+    .nav-item
+    {
+        padding:0 0.5rem;
+        display: inline-block;
+    }
+}
+@media (max-width:450px) 
+{
+    .search-bar form
+    {
+        margin:0;
+        width: 100%;
+    }
+    .user
+    {
+        display:none !important;
+    }
+    
+    .user.mobile
+    {
+        display: block !important;
+        color: white;
+        margin-top:0.5rem;
+    }
+    .user.mobile a
+    {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 900;
+    }
+
+    .hero h1
+    {
+        font-size: 7.5rem;
+    }
+}
+
