@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Floral | Signup</title>
 </head>
 <body>
 
