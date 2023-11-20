@@ -15,7 +15,7 @@
 
           $total += (int)$item['price']
         ?>
-        <div class="col-md-12 mb-5 px-3">
+        <div class="col-md-12 my-5 px-3">
           <div class="row align-items-center">
               <div class="col-md-7 mx-auto">
                   <div class="row justify-content-between">
@@ -48,10 +48,10 @@
                 </div>
           </div>
         </div>
+        <hr>
         <?php
        }
       ?>
-      <hr>
     </div>
     <div class="row">
       <div class="col-md-5 mx-auto">
