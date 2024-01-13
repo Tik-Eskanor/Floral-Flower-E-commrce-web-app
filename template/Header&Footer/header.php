@@ -24,6 +24,17 @@
   {
     $carts = [];
   }
+
+
+  $check_save = $cart_obj->saved($_SESSION['user']['id'] ?? 0);
+  if(isset($check_save))
+  {
+    $saved = $check_save;
+  }
+  else
+  {
+    $saved = [];
+  }
 ?>
 
 <!DOCTYPE html>
@@ -112,7 +123,8 @@
             <a class="nav-link  text-dark" href="index.php#footer">Reach Out</a>
           </li>
           <li class="ms-3 cart-icon-wrapper">
-            <a class=" fs-5 d-inline-block px-4 bg-light rounded-pill py-1  text-dark" href="cart.php"><i class="fas fa-cart-plus"></i><span class="fw-bold ms-1"><?= count($carts) ?></span></a>
+            <a class=" fs-5 d-inline-block px-4 bg-light rounded-pill py-1  text-dark me-3" href="cart.php"><i class="fas fa-cart-plus"></i><span class="fw-bold ms-1"><?= count($carts) <= 0 ? "":count($carts) ?></span></a>
+            <a class=" fs-5 d-inline-block px-4 bg-light rounded-pill py-1  text-dark" href="cart.php"><i class="fas fa-heart"></i><span class="fw-bold ms-1"><?= count($saved) <= 0 ? "":count($saved) ?></span></a>
           </li>
           <li class="ms-2">
             <?php
