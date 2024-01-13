@@ -106,8 +106,8 @@
                             </div>
                             <div class="col-md-4 align-self-center">
                               <div class="texts">
-                                    <h3><?= $item['name']?></h3>
-                              </div>
+                                  <h3><?= $item['name']?></h3>
+                            </div>
                               <div class="fs-3 d-flex align-items-center"><img src="images/naira-d.png" width="25px"> <span class="ms-1"><?= $item['price']?></span> </div>
                               <div>
                                 <h4>Description</h4>
